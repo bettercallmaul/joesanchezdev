@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/joesgjds/public_html/
-    - /bin/cp -R html $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
   
 
 
