@@ -1650,6 +1650,11 @@ header .header-mobile .header-toggle i {
     font-size: 18px;
 }
 
+.mobileport{
+    height: 600px;
+    width: 300px;
+}
+
 .ajax-portfolio-popup .single-work .information li span.title {
     font-family: "Playfair Display", serif;
     font-size: 18px;
