@@ -3,15 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/joesgjds/public_html/
     - /bin/cp -R html $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R emails $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R web $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp mail.php $DEPLOYPATH
-    - /bin/cp single-work.html $DEPLOYPATH
+  
 
 
 
