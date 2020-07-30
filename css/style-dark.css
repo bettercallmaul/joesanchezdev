@@ -1427,10 +1427,13 @@ header .header-mobile .header-toggle i {
     content: "\f03d";
 }
 
-.portfolio-section .item a.ajax-link figure:after {
-    content: "\f15c";
+.portfolio-section .item a.ajax-link  figure:after {
+    content: "\f0ac";
 }
 
+.portfolio-section .item a.ajax-link figure.email-icon:after {
+    content: "\f0e0";
+}
 
 /*============ 8. Blog Section ============*/
 
