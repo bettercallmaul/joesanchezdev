@@ -1654,8 +1654,8 @@ header .header-mobile .header-toggle i {
 }
 
 .mobileport{
-    height: 600px;
-    width: 300px;
+    height: 40%;
+    width: 40%;
 }
 
 .ajax-portfolio-popup .single-work .information li span.title {

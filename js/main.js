@@ -41,7 +41,9 @@ $(window).on('load', function() {
 
 /*======== Document Ready Function ========*/
 $(document).ready(function() {
-
+    
+        $.ajax({ cache: false }); // or iPhones don't get fresh data
+    
     "use strict";
 
 
@@ -180,6 +182,7 @@ $(document).ready(function() {
     });
 
     /*======== Portfolio Ajax Link Setup ========*/
+
     ajaxPortfolioSetup($('.portfolio-items .ajax-link'), $('.ajax-portfolio-popup'));
 
     /*======== Portfolio Tilt Setup ========*/
@@ -202,7 +205,10 @@ $(document).ready(function() {
 
 
 /*********** Function Ajax Portfolio Setup **********/
+
+
 function ajaxPortfolioSetup($ajaxLink, $ajaxContainer) {
+
     $ajaxLink.on('click', function(e) {
         var link = $(this).attr('href');
 
@@ -223,10 +229,10 @@ function ajaxPortfolioSetup($ajaxLink, $ajaxContainer) {
                 $ajaxContainer.find('.content-wrap .popup-content').html(result);
             },
             complete: function() {
-                $ajaxContainer.find('.ajax-loader').hide();
+                $ajaxContainer.find('.ajax-loader').show();
             },
             error: function(e) {
-                $ajaxContainer.find('.ajax-loader').hide();
+                $ajaxContainer.find('.ajax-loader').html(result);
                 $ajaxContainer.find('.content-wrap .popup-content').html('<h1 class="text-center">Something went wrong! Retry or refresh the page.</h1>')
             }
         });
